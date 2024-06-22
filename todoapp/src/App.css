@@ -25,6 +25,11 @@ body {
   gap: 0.5rem;
 }
 
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
 .form-row {
   display: flex;
   flex-direction: column;
@@ -65,13 +70,19 @@ body {
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
   color: hsl(200, 100%, 90%);
+  text-align: center;
 }
 
+input:focus::placeholder {
+  color: transparent;
+} 
 
 .new-item-form label {
   color: white;
   text-align: center
 }
+
+
 
 .no-todos {
   color: white;

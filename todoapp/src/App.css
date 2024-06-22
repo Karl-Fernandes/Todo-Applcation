@@ -50,6 +50,7 @@ body {
   background: hsl(0, 100%, 40%, 0.1);
   border: 1px solid hsl(0, 100%, 40%);
   color: hsl(0, 100%, 40%);
+  margin-left: auto; /* Aligns button to the right */
 }
 
 .btn.btn-danger:hover,
@@ -103,8 +104,9 @@ body {
   margin-bottom: 0.5rem;
   color: white;
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between; /* Ensures children are spaced out */
   align-items: center;
+  gap: 0.5rem;
 }
 
 .list li label {
@@ -112,6 +114,7 @@ body {
   gap: 0.25rem;
   cursor: pointer;
   align-items: center;
+  flex-grow: 1; /* Allows label to take up available space */
 }
 
 .list li:has(input:focus-visible) label {

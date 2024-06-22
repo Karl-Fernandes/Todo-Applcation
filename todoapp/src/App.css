@@ -63,6 +63,31 @@ body {
   background: hsl(0, 100%, 40%, 0.2);
 }
 
+.button-group {
+  display: flex;
+  gap: 8px; /* Adjust gap between buttons */
+}
+
+.edit-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+.edit-item-form label{
+  outline: none;
+  background: #1A1A40;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  color: hsl(200, 100%, 90%);
+  text-align: center;
+}
+
+.edit-item-form input{
+  text-align: center;
+}
+
 .new-item-form input {
   outline: none;
   border: 1px solid #8758ff;
